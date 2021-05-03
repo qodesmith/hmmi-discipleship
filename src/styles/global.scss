@@ -1,0 +1,35 @@
+// https://bit.ly/3aI9YSD - universal box-sizing with inheritance.
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  padding: 0;
+
+  // https://mzl.la/2KnTfHh
+  // size/line-height | family
+  font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
+
+  height: 100%;
+  overflow: hidden;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid;
+  margin: 0;
+}
+
+.contents {
+  background-color: gainsboro;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
